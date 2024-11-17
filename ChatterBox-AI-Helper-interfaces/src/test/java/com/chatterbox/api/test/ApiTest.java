@@ -35,7 +35,7 @@ try {
     e.printStackTrace();
 }
     }
-
+    @Test
     public void postReply() throws IOException {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         HttpPost httpPost = new HttpPost("https://api.chatterbox.com");
