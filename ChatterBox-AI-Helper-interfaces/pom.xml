@@ -121,6 +121,11 @@
       <artifactId>hutool-all</artifactId>
       <version>5.8.10</version>
     </dependency>
+    <dependency>
+      <groupId>com.chatterbox</groupId>
+      <artifactId>ChatterBox-AI-Helper-domain</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
 </project>
