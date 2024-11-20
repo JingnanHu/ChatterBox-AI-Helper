@@ -58,4 +58,23 @@ try {
             System.out.println(response.getStatusLine().getStatusCode());
         }
     }
+    public void test_AI() throws IOException {
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        HttpPost httpPost = new HttpPost("");
+//        find your own Api key in this page: https://platform.openai.com/api-keys
+        httpPost.addHeader("Content-Type", "application/json");
+        httpPost.addHeader("Authorization", "Bearer 自行申请 https://beta.openai.com/overview");
+
+        String paramJson = "{\"model\": \"text-davinci-003\", \"prompt\": \"帮我写一个java冒泡排\", \"temperature\": 0, \"max_tokens\": 1024}";
+        StringEntity stringEntity = new StringEntity(paramJson, ContentType.create("application/json", "UTF-8"));
+        httpPost.setEntity(stringEntity);
+        CloseableHttpResponse response = httpClient.execute(httpPost);
+        if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK){
+            String res = EntityUtils.toString(response.getEntity());
+            System.out.println(res);
+
+        } else {
+            System.out.println(response.getStatusLine().getStatusCode());
+        }
+    }
 }

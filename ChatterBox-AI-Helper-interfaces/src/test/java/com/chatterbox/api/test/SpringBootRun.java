@@ -1,5 +1,6 @@
 package com.chatterbox.api.test;
 
+import com.chatterbox.api.domain.AI.service.OpenAI;
 import com.chatterbox.api.domain.chattersDomain.IchatterboxApi;
 import com.chatterbox.api.domain.chattersDomain.agg.UnAnsweredQuestionsAggregates;
 import com.chatterbox.api.domain.chattersDomain.vo.Topics;
@@ -10,6 +11,7 @@ import java.util.List;
 
 public class SpringBootRun {
     private IchatterboxApi chatterboxApi ;
+   private OpenAI openAI;
 
     @Value("${chatterbox-api.groupId}")
     private String groupId;
@@ -26,5 +28,7 @@ public class SpringBootRun {
 chatterboxApi.answer(groupId, cookie, topicId, text,false);
         }
         }
-
+public void test_Ai () throws IOException {
+        String response = openAI.do_AI("Help me calculate 1 + 1, thank you!");
+    }
     }
