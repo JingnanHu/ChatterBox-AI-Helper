@@ -1,7 +1,7 @@
-## 1. INTRODUCTION
+## 1. Introduction
 ChatterBox-AI-HELPER is an intelligent question-and-answer system created to help users resolve common issues and answer general questions. It aims to enhance the efficiency of providing responses and decrease the time investment required for dealing with frequently encountered problems. This tool leverages artificial intelligence to deliver quick, accurate, and effective solutions, helping users get answers faster and reducing the workload for support teams or individuals.
 
-## 2. TECH STACK
+## 2. Tech Stack
 
    SpringBoot
    DDD architecture (Domain-Driven Design)
