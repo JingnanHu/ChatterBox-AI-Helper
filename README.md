@@ -3,14 +3,14 @@ ChatterBox-AI-HELPER is an intelligent question-and-answer system created to hel
 
 ## 2. Tech Stack
 
-   SpringBoot
-   DDD architecture (Domain-Driven Design)
-   GitHub repository usage
-   API web scraping
-   AI API integration
-   Scheduled tasks
-   Image packaging
-   Docker container deployment
+   1. SpringBoot
+   2. DDD architecture (Domain-Driven Design)
+   3. GitHub repository usage
+   4. API web scraping
+   5. AI API integration
+   6. Scheduled tasks
+   7. Image packaging
+   8. Docker container deployment
 
 ## 3. Copyright
 This project is licensed under the Apache License 2.0. It is created for educational purposes and is prohibited from being sold in any paid form by training institutions, private individuals, or corporate organizations.
